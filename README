@@ -1,0 +1,28 @@
+A simple drum machine for kinect in python. 
+Jeff Bryner 01/2011
+jeff@jeffbryner.com
+
+Dependencies? Hmm: 
+pygame
+freenect
+opengl
+numpy
+wave
+alsaaudio
+
+If you've got a kinect and a reasonable install of python you should be able to just
+python pygdrumcloud.py and off ya go. 
+
+The UI has mouse support including scroll wheel for zooming in and out, right mouse for Z axis crazyness, left
+mouse to yank the viewport around. 
+
+Important keys: 
+
+ESC	 	quit
+keypad + 	Increase the threshold for drawing the back of the cloud (i.e. how much of the room to draw).
+keypad -	Decrease the same threshold
+-		Decrease the size of the points in the kinect pointcloud
++ (= reall)	Increase the size of the points in the kinect pointcloud
+1		Decrease the cloud sample size (helps with slow boxen)
+2		Increate the clous sample size (showoff).
+space		Sets the viewing parameters back to default. 
